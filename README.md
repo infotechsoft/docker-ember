@@ -3,11 +3,11 @@
 
 
 ## Base Image
- * [NodeJS](https://hub.docker.com/_/node/) 9.2.0
+ * [NodeJS](https://hub.docker.com/_/node/) 9.8.0
   
 ## Installed
  * Watchmen 4.9.0
- * ember-cli 2.16.2
+ * ember-cli 3.0.0
  * bower
  * phantomjs
  * check-dependencies
