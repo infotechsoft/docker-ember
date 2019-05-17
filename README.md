@@ -1,16 +1,12 @@
 # docker-ember
-<a href="https://emberjs.com/"><img src="https://emberjs.com/images/brand/ember_Ember-Light-e42a2b30.png" alt="EmberJS" height="48px"/></a> docker image based on <a href="https://nodejs.org"><img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png" alt="NodeJS" height="48px"/></a>
-
+<a href="https://emberjs.com/"><img src="https://emberjs.com/images/brand/ember_Tomster-Lockup-b368131eb80ecbcbaf2d23fd4cb27295.png" alt="EmberJS" height="48px"/></a> docker image based on <a href="https://nodejs.org"><img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png" alt="NodeJS" height="48px"/></a>
+Minimal installation of EmberJS on NodeJS LTS Alpine
 
 ## Base Image
- * [NodeJS](https://hub.docker.com/_/node/) 9.8.0
+ * [NodeJS](https://hub.docker.com/_/node/) lts-alpine
   
 ## Installed
- * Watchmen 4.9.0
- * ember-cli 3.0.0
- * bower
- * phantomjs
- * check-dependencies
+ * ember-cli 3.10
 
 ## Settings
 	
@@ -22,10 +18,12 @@
 
 ## Running
 
-With a pre-built ember application: 
+    docker run -d -p 4200:4200 -p 9999:9999 -v $(pwd):/usr/local/ember infotechsoft/ember-cli
+    # starts `ember server` in /usr/local/ember
 
-    docker run -d -p 4200:4200 -p 9999:9999 -v $(pwd):/usr/local/ember infotechsoft/ember
-    
- 
+## Building an Ember Application
+
+    docker run --rm -v $(pwd):/usr/local/ember infotechsoft/ember-cli ember build
+
 # Maintainer 
 ![INFOTECH Soft](http://infotechsoft.com/wp-content/uploads/2017/04/InfotechSoft_logo-small.png "INFOTECH Soft, Inc.")
