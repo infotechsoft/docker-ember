@@ -3,10 +3,10 @@
 Minimal installation of EmberJS on NodeJS LTS Alpine
 
 ## Base Image
- * [NodeJS](https://hub.docker.com/_/node/) lts-alpine
+ * [NodeJS](https://hub.docker.com/_/node/) node:alpine
   
 ## Installed
- * ember-cli 3.10
+ * ember-cli 3.12
 
 ## Settings
 	
