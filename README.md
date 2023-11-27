@@ -1,12 +1,12 @@
 # docker-ember
 <a href="https://emberjs.com/"><img src="https://emberjs.com/images/brand/ember_Tomster-Lockup.png" alt="EmberJS" height="48px"/></a> docker image based on <a href="https://nodejs.org"><img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg" alt="NodeJS" height="48px"/></a>
-Minimal installation of EmberJS 3.16 on NodeJS LTS 12 Alpine
+Minimal installation of EmberJS LTS 3.28 on NodeJS LTS 20 Slim
 
 ## Base Image
- * [NodeJS](https://hub.docker.com/_/node/) node:alpine
+ * [NodeJS](https://hub.docker.com/_/node/) node:20-slim
   
 ## Installed
- * ember-cli LTS (3.16.2)
+ * ember-cli LTS (3.28.6)
 
 ## Settings
 	
